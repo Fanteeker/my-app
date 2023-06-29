@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Django for Backend and React for Frontend
 
 ## Available Scripts
 
