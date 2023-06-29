@@ -1,22 +1,34 @@
 import './App.css';
 import React from 'react';
+import Employee from './components/Employee';
+import Header from './components/layout/Header';
+import Card from './components/Card';
+import Footer from './components/layout/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className='min-vh-100 d-flex flex-column justify-content-between'>
+          <Header />
+          <Employee />
+          <div className='row'>
+            <div className="col">
+              <Card />
+            </div>
+            <div className="col">
+              <Card />
+            </div>
+            <div className="col">
+              <Card />
+            </div>  
+            <div className="col">
+              <Card />
+            </div>              
+          </div> 
+          <Footer />  
+        </div>               
+      </div>
     </div>
   );
 }
